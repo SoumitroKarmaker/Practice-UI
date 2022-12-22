@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 // import 'package:untitled1/screens/authorization/splash_screen.dart';
-import 'package:untitled1/screens/onBoarding.dart';
+import 'package:untitled1/screens/authorization/onBoarding.dart';
 
 void main () => runApp(MyApp());
 
