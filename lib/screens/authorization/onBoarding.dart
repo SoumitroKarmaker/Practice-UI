@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:untitled1/constant.dart';
+import 'package:untitled1/screens/authorization/sign_up.dart';
 
 class OnBoarding extends StatefulWidget {
   const OnBoarding({Key? key}) : super(key: key);
@@ -96,7 +97,7 @@ class _OnBoardingState extends State<OnBoarding> {
               ),
               Container(
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal:15.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 15.0),
                   child: Stack(
                     alignment: Alignment.bottomRight,
                     children: [
@@ -117,7 +118,12 @@ class _OnBoardingState extends State<OnBoarding> {
                                 color: mainColor),
                           ),
                           TextButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => Sign_Up()));
+                            },
                             child: Text(
                               'Join a Comunity',
                               style: TextStyle(
@@ -126,8 +132,14 @@ class _OnBoardingState extends State<OnBoarding> {
                           ),
                         ],
                       ),
-                      Positioned(child: ElevatedButton(
-                        onPressed: (){},
+                      Positioned(
+                          child: ElevatedButton(
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Sign_Up()));
+                        },
                         child: Text('Get Started'),
                       ))
                     ],
