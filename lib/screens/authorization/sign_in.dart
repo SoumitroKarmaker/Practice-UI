@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:nb_utils/nb_utils.dart';
 
-class Sign_Up extends StatelessWidget {
-  const Sign_Up({Key? key}) : super(key: key);
+class Sign_In extends StatelessWidget {
+  const Sign_In({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -39,31 +39,9 @@ class Sign_Up extends StatelessWidget {
                   child: Column(
                     children: [
                       Text(
-                        'Sign Up',
+                        'Sign In',
                         style: TextStyle(
                             fontSize: 40, fontWeight: FontWeight.bold),
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      AppTextField(
-                        textFieldType: TextFieldType.NAME,
-                        decoration: InputDecoration(
-                          border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(15)),
-                          label: Text('Frist Name'),
-                        ),
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      AppTextField(
-                        textFieldType: TextFieldType.NAME,
-                        decoration: InputDecoration(
-                          border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(15)),
-                          label: Text('Last Name'),
-                        ),
                       ),
                       SizedBox(
                         height: 10,
@@ -90,20 +68,12 @@ class Sign_Up extends StatelessWidget {
                       SizedBox(
                         height: 10,
                       ),
-                      AppTextField(
-                        textFieldType: TextFieldType.NAME,
-                        decoration: InputDecoration(
-                          border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(15)),
-                          label: Text('Confirm Password'),
-                        ),
-                      ),
                       SizedBox(height: 10,),
                       Container(
                         color: Colors.blue,
                         width: MediaQuery.of(context).size.width,
                         height: 40,
-                        child: Center(child: Text('Sign Up')),
+                        child: Center(child: Text('Sign In')),
                       ),
 
                     ],
