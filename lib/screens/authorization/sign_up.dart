@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:nb_utils/nb_utils.dart';
 
@@ -98,14 +99,22 @@ class Sign_Up extends StatelessWidget {
                           label: Text('Confirm Password'),
                         ),
                       ),
-                      SizedBox(height: 10,),
+                      SizedBox(
+                        height: 10,
+                      ),
                       Container(
                         color: Colors.blue,
                         width: MediaQuery.of(context).size.width,
                         height: 40,
                         child: Center(child: Text('Sign Up')),
                       ),
-
+                      SizedBox(
+                        height: 20,
+                      ),
+                      Text(
+                        'Allready have an Acount',
+                        style: TextStyle(color: Colors.black, fontSize: 15),
+                      ),
                     ],
                   ),
                 ),
