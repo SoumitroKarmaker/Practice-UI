@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:nb_utils/nb_utils.dart';
 
+import '../home.dart';
+
 class Sign_In extends StatelessWidget {
   const Sign_In({Key? key}) : super(key: key);
 
@@ -68,14 +70,22 @@ class Sign_In extends StatelessWidget {
                       SizedBox(
                         height: 10,
                       ),
-                      SizedBox(height: 10,),
+                      SizedBox(
+                        height: 10,
+                      ),
                       Container(
-                        color: Colors.blue,
+                        decoration: BoxDecoration(
+                            color: Colors.blue,
+                            borderRadius: BorderRadius.circular(20)),
                         width: MediaQuery.of(context).size.width,
                         height: 40,
-                        child: Center(child: Text('Sign In')),
+                        child: Center(
+                            child: Text(
+                          'Sign In',
+                          style: TextStyle(color: Colors.white, fontSize: 16),
+                        ).onTap(() => Home().launch(context))
+                        ),
                       ),
-
                     ],
                   ),
                 ),

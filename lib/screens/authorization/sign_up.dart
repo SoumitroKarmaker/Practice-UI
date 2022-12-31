@@ -1,6 +1,7 @@
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:nb_utils/nb_utils.dart';
+
+import 'package:untitled1/screens/authorization/sign_in.dart';
 
 class Sign_Up extends StatelessWidget {
   const Sign_Up({Key? key}) : super(key: key);
@@ -103,17 +104,32 @@ class Sign_Up extends StatelessWidget {
                         height: 10,
                       ),
                       Container(
-                        color: Colors.blue,
+                        decoration: BoxDecoration(
+                            color: Colors.blue,
+                            borderRadius: BorderRadius.circular(20)),
                         width: MediaQuery.of(context).size.width,
                         height: 40,
-                        child: Center(child: Text('Sign Up')),
+                        child: Center(
+                            child: Text(
+                          'Sign Up',
+                          style: TextStyle(color: Colors.white, fontSize: 16),
+                        ).onTap(() => Sign_In().launch(context))),
                       ),
                       SizedBox(
                         height: 20,
                       ),
-                      Text(
-                        'Allready have an Acount',
-                        style: TextStyle(color: Colors.black, fontSize: 15),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            'Allready have an Acount ',
+                            style: TextStyle(color: Colors.black, fontSize: 15),
+                          ),
+                          Text(
+                            'Sign In',
+                            style: TextStyle(color: Colors.blue, fontSize: 15),
+                          ).onTap(() => Sign_In().launch(context)),
+                        ],
                       ),
                     ],
                   ),
